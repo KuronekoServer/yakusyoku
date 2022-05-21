@@ -2,7 +2,7 @@ console.log(require('discord.js').version)
 
 const prefix = '!'
 LOG_CHANNEL_ID = '937190204693958706'
-const { Client, Intents } = require('discord.js');
+const { Client, Intents, MessageEmbed } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const discord_job = require("discord-job-panel");
 discord_job.db_type({ id: 1, label: "db", key: "mongodb://localhost:27017" });
