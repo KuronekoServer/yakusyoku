@@ -67,7 +67,7 @@ client.on('messageCreate', async message => {
     const [command_name, ...args] = message.content.slice(prefix.length).split(' ')
     command(command_name, args)
 })
-function command(command, args) {
+async function command(command, args) {
     switch (command) {
         case 'support':
             var embed = new MessageEmbed({
